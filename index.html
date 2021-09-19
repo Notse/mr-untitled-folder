@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Untitled Folder | Nikhil Notse </title>
+
+    <!-- links -->
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="intro"><span> Include words like <hl> dumb </hl> ,<hl> new </hl> , <hl> notse  </hl>or leave it <hl> empty </hl> to trigger response </span>
+        <i class="info-icon fa fa-info"></i>
+    </div>
+    
+    <div id="instruction" class="instruction" > <span> Right Click and create a New Folder </span></div>
+    
+    <div id="info" class="info">
+        <h1 id="title"> </h1>
+        <span id="subtitle"> </span>
+        <span onClick="closeAlert()" id="btn" class="btn"></span>
+    </div>
+    
+    <div id="context-menu">
+    <div class="item" onClick="createFolder()"> 
+        <i  class="fa fa-folder"></i> New folder 
+    </div>
+    <div class="item" onClick="cutFolder()" > 
+        <i class="fa fa-cut"></i> cut
+    </div>
+    <div class="item" onClick="pasteFolder()"> 
+        <i class="fa fa-paste" ></i> paste
+    </div>
+    <div class="item"  onClick="renameFolder()"> 
+        <i class="fas fa-file-signature"></i> Rename 
+    </div>
+    <div class="item" onClick="deleteFolder()"> 
+        <i  class="fa fa-trash"></i> Delete
+    </div>
+    <hr>
+    <a href="https://github.com/notse" target="_blank">
+        <div class="item"> 
+             <i class="fab fa-github"></i> Nikhil Notse 
+        </div>
+    </a>
+    </div>
+    
+    <!-- humanoid Folder -->
+    <div id="visiblity"> 
+        <div class="folder-container">
+        <div class="message-box">
+            <span id="msg"> Dude! Give me a Name </span>
+        </div>
+        <div id="folder" class="folder fas fa-folder">
+            <div  id="look">
+                        <div id="eye-1" class="eyes" > </div>
+                        <div  id="eye-2" class="eyes" > </div>
+            </div>
+            <div id="eyeBrows" >
+                    <div id="leftEyebrow" class="left-eyeBrow"> </div>
+                    <div id="rightEyebrow"class="right-eyeBrow"> </div>
+            </div>
+            <div id="mood" class="mouth"> </div>
+            <div id="folder-name"> 
+                 <input onInput="animation()"; onChange="nameChange()" id="text-box" type="text"  >
+            </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="copyright-text"> 
+        <div class="emoji"><img src="svg/emoji.svg"> </div>
+        <span>Made with Fun</span>
+    </div>
+
+    <script src="main.js"> </script>
+</body>
+</html>
